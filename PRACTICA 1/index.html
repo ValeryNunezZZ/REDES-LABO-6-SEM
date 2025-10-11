@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <script src="servidor.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Tienda Online</h1>
+            <p class="subtitle">Encuentra los mejores productos al mejor precio</p>
+        </header>
+
+        <!-- Navegación por categorías -->
+        <div class="nav-tabs">
+            <div class="nav-tab active" data-category="">Todos los Productos</div>
+            <div class="nav-tab" data-category="electronicos">Electrónicos</div>
+            <div class="nav-tab" data-category="ropa">Ropa</div>
+            <div class="nav-tab" data-category="hogar">Hogar</div>
+            <div class="nav-tab" data-category="comida">Comida</div>
+        </div>
+
+        <!-- Búsqueda -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="Buscar productos por nombre...">
+                <button class="btn" id="searchBtn">Buscar</button>
+                <button class="btn" id="clearSearch">Limpiar</button>
+            </div>
+        </div>
+
+        <!-- Estado de conexión -->
+        <div id="connectionStatus" class="error hidden">
+            No conectado al servidor
+        </div>
+
+        <!-- Loading -->
+        <div id="loading" class="loading hidden">
+            Cargando productos...
+        </div>
+
+        <!-- Productos -->
+        <div id="productsSection">
+            <h2>Productos Disponibles</h2>
+            <div id="productsGrid" class="products-grid">
+                <!-- Los productos se cargarán aquí -->
+            </div>
+        </div>
+
+        <!-- Carrito -->
+        <div id="cartSection" class="cart-section hidden">
+            <h2>🛒 Tu Carrito de Compras</h2>
+            <div id="cartItems" class="cart-items">
+                <!-- Los items del carrito se mostrarán aquí -->
+            </div>
+            <div class="cart-summary">
+                <div class="total-amount">Total: $<span id="cartTotal">0.00</span></div>
+                <button class="btn" id="checkoutBtn">Finalizar Compra</button>
+                <button class="btn btn-danger" id="clearCartBtn">Vaciar Carrito</button>
+            </div>
+        </div>
+
+        <!-- Ticket -->
+        <div id="ticketSection" class="ticket hidden">
+            <!-- El ticket se mostrará aquí -->
+        </div>
+    </div>
+</body>
+</html>

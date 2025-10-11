@@ -1,0 +1,130 @@
+[
+{
+"id": 1,
+"nombre": "Laptop Gamer",
+"precio": 25000,
+"stock": 5,
+"imagen": "laptop_gamer.jpg",
+"categoria": "electronicos"
+},
+{
+"id": 2,
+"nombre": "Smartphone Android",
+"precio": 8000,
+"stock": 12,
+"imagen": "smartphone.jpg",
+"categoria": "electronicos"
+},
+{
+"id": 3,
+"nombre": "Auriculares Inalámbricos",
+"precio": 1500,
+"stock": 8,
+"imagen": "auriculares.jpg",
+"categoria": "electronicos"
+},
+{
+"id": 4,
+"nombre": "Tablet 10 Pulgadas",
+"precio": 6000,
+"stock": 3,
+"imagen": "tablet.jpg",
+"categoria": "electronicos"
+},
+{
+"id": 5,
+"nombre": "Camisa Casual",
+"precio": 450,
+"stock": 20,
+"imagen": "camisa_casual.jpg",
+"categoria": "ropa"
+},
+{
+"id": 6,
+"nombre": "Jeans Clásicos",
+"precio": 800,
+"stock": 15,
+"imagen": "jeans.jpg",
+"categoria": "ropa"
+},
+{
+"id": 7,
+"nombre": "Zapatos Deportivos",
+"precio": 1200,
+"stock": 10,
+"imagen": "zapatos_deportivos.jpg",
+"categoria": "ropa"
+},
+{
+"id": 8,
+"nombre": "Chamarra de Cuero",
+"precio": 2500,
+"stock": 4,
+"imagen": "chamarra_cuero.jpg",
+"categoria": "ropa"
+},
+{
+"id": 9,
+"nombre": "Sofá 3 Plazas",
+"precio": 8500,
+"stock": 2,
+"imagen": "sofa_3plazas.jpg",
+"categoria": "hogar"
+},
+{
+"id": 10,
+"nombre": "Mesa de Centro",
+"precio": 2200,
+"stock": 6,
+"imagen": "mesa_centro.jpg",
+"categoria": "hogar"
+},
+{
+"id": 11,
+"nombre": "Lámpara Moderna",
+"precio": 750,
+"stock": 8,
+"imagen": "lampara_moderna.jpg",
+"categoria": "hogar"
+},
+{
+"id": 12,
+"nombre": "Juego de Sábanas",
+"precio": 650,
+"stock": 15,
+"imagen": "juego_sabanas.jpg",
+"categoria": "hogar"
+},
+{
+"id": 13,
+"nombre": "Pizza Congelada",
+"precio": 85,
+"stock": 25,
+"imagen": "pizza_congelada.jpg",
+"categoria": "comida"
+},
+{
+"id": 14,
+"nombre": "Café Premium",
+"precio": 120,
+"stock": 30,
+"imagen": "cafe_premium.jpg",
+"categoria": "comida"
+},
+{
+"id": 15,
+"nombre": "Galletas Artesanales",
+"precio": 45,
+"stock": 40,
+"imagen": "galletas_artesanales.jpg",
+"categoria": "comida"
+},
+{
+"id": 16,
+"nombre": "Jugo Natural",
+"precio": 35,
+"stock": 50,
+"imagen": "jugo_natural.jpg",
+"categoria": "comida"
+}
+]
