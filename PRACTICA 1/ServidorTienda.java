@@ -238,4 +238,7 @@ public class ServidorTienda extends WebSocketServer {
         public String getImagen(){return imagen;}
         public String getCategoria(){return categoria;}
     }
+
+    //javac -cp ".:lib/*" ServidorTienda.java
+    //java -cp ".:lib/*" ServidorTienda
 }
