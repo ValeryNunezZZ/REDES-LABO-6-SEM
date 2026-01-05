@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Control Servidor Web</title>
+    <link rel="stylesheet"  href="estilo.css">
+</head>
+<body>
+
+    <div class="todo">
+        <div class="panel">
+            <div class="pantalla">
+                <div class="encabezado">
+                    <div class="imagen"></div>
+                </div>
+                
+                <div class="selector">
+                    <input type="text" id="nombreArchivo" placeholder="ejemplo: shaq.jpg o nota.txt">
+                    <button id="button-get" class="btn-get" onclick="redirigirArchivo()">Ir al archivo (GET)</button>
+                </div>
+            </div> 
+    
+            <div class="botones">
+                <button class="btn-post" onclick="enviarPeticion('POST')">Enviar POST</button>
+    
+                <button class="btn-put" onclick="enviarPeticion('PUT')">Enviar PUT</button>
+    
+                <button class="btn-delete" onclick="enviarPeticion('DELETE')">Enviar DELETE</button>
+            </div>
+        </div>
+    
+        <div id="resultado">
+            <i>Esperando interacción...</i>
+        </div>
+    </div>
+
+    <script>
+        // Función para el botón GET: construye la URL y redirige el navegador
+        function redirigirArchivo() {
+            const archivo = document.getElementById('nombreArchivo').value;
+            if (archivo.trim() === "") {
+                alert("Por favor escribe el nombre de un archivo (ej: shaq.jpg)");
+                return;
+            }
+            // Redirecciona a http://127.0.0.1:8000/nombre_del_archivo
+            window.location.href = "http://127.0.0.1:8000/" + archivo;
+        }
+
+        // Función para los métodos asíncronos (POST, PUT, DELETE)
+        function enviarPeticion(metodo) {
+            const display = document.getElementById('resultado');
+            display.innerHTML = "Procesando " + metodo + "...";
+
+            fetch('/recurso_simulado', {
+                method: metodo,
+                body: metodo !== 'DELETE' ? "Cuerpo de la petición " + metodo : null
+            })
+            .then(response => response.text())
+            .then(data => {
+                display.innerHTML = "<p>Servidor respondió:</p>" + data;
+            })
+            .catch(error => {
+                display.innerHTML = "<strong>Error:</strong> " + error;
+            });
+        }
+    </script>
+</body>
+</html>
+

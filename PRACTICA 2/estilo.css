@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    box-sizing: border-box;
+
+    font-size: 12px;
+
+}
+
+body{
+    background-color: rgb(255, 210, 238);
+}
+
+.todo{
+    background-color: rgb(0, 0, 0);
+    
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+h2{
+    font-family: "Rubik Gemstones", system-ui;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.689);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    background-color: rgb(255, 153, 216);
+
+    width: fit-content;
+    padding: 4rem;
+
+    border-radius: 3rem;
+    border: solid rgb(174, 92, 141) 0.5rem;
+
+    box-shadow: 
+    inset 0.5rem 0.5rem 0.3rem 0.3rem rgb(219, 130, 184),
+    inset -0.5rem -0.5rem 0.3rem 0.3rem rgba(255, 255, 255, 0.529);
+}
+
+.pantalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 100%;
+
+    background-image: url(./cielo.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 3rem;
+
+    padding: 2rem;
+
+    box-shadow: 
+        inset 0.5rem 0.5rem 0.3rem 0.3rem rgba(91, 91, 91, 0.486),
+        inset -0.5rem -0.5rem 0.3rem 0.3rem rgba(255, 255, 255, 0.529);
+}
+
+.panel .pantalla div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezado{
+    gap: 1rem;
+}
+
+.selector{
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.imagen{
+    animation: flotar 1s ease-in-out infinite;
+}
+
+.encabezado .imagen{
+    width: 15rem;
+    height: 12rem;
+
+    background-image: url(kirby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.428));
+}
+
+.panel :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.panel :nth-child(2) button{
+    cursor: pointer;
+
+    padding: 1rem;
+
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+
+    background-color: rgb(203, 119, 170);
+
+
+    box-shadow: 
+    inset 0.5rem 0.5rem 0.3rem 0.3rem rgb(219, 130, 184),
+    inset -0.5rem -0.5rem 0.3rem 0.3rem rgba(0, 0, 0, 0.111);
+
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#button-get{
+    background-color: rgba(255, 255, 255, 0.529);
+
+    font-weight: bold;
+
+    color: rgba(3, 75, 114, 0.467);
+
+    box-shadow: 
+    inset -0rem -0rem 0.3rem 0.3rem rgba(17, 7, 98, 0.111);
+}
+
+input{
+    padding: 1rem;
+
+    width: 60%;
+
+    border-radius: 0.5rem;
+}
+
+
+#resultado{
+    background-color: rgba(249, 255, 199, 0.949);
+
+    width: 40rem;
+    height: 40rem;
+
+    box-shadow: inset 1rem 1rem 10px 0px rgba(159, 161, 108, 0.299);
+
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: 40px;
+}
+
+p, i, h1{ 
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+
+    font-size: 1.5rem;
+}
+
+/* Definimos el movimiento */
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}
+
