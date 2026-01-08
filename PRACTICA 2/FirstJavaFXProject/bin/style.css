@@ -1,0 +1,54 @@
+/* ---- FONDO GENERAL DE LA APLICACIÓN ---- */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #2c3e50, #34495e); /* Gradiente oscuro y moderno */
+    -fx-padding: 30px; /* Un poco de espacio alrededor del contenido */
+}
+
+/* ---- ESTILO DEL CONTENEDOR PRINCIPAL (VBox) ---- */
+.vbox-container {
+    -fx-background-color: rgba(44, 62, 80, 0.7); /* Fondo semi-transparente para un efecto de profundidad */
+    -fx-background-radius: 15px; /* Bordes redondeados */
+    -fx-padding: 25px; /* Espacio interno */
+    -fx-spacing: 25px; /* Más espacio entre elementos */
+    -fx-alignment: center; /* Centrar contenido */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 0, 0); /* Sombra para el VBox */
+}
+
+/* ---- ESTILO GENERAL DE LOS BOTONES ---- */
+.button {
+    -fx-background-color: linear-gradient(to right, #007bff, #00c7e2); /* Gradiente azul-aqua */
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI Semibold"; /* Fuente más moderna */
+    -fx-font-size: 16px;
+    -fx-padding: 12px 25px; /* Padding generoso */
+    -fx-background-radius: 30px; /* Botones más redondeados (estilo "píldora") */
+    -fx-border-color: #00bcd4; /* Borde sutil */
+    -fx-border-width: 1px;
+    -fx-border-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Sombra suave */
+    -fx-cursor: hand; /* Cambia el cursor al pasar por encima */
+    -fx-transition: all 0.2s ease-in-out; /* Transición suave para efectos hover */
+}
+
+/* ---- EFECTO HOVER PARA BOTONES ---- */
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #0056b3, #0097c0); /* Gradiente más oscuro al pasar el ratón */
+    -fx-scale-y: 1.05; /* Un ligero efecto de "crecer" */
+    -fx-scale-x: 1.05;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 20, 0, 0, 0); /* Sombra más pronunciada */
+}
+
+/* ---- ESTILO PARA BOTONES DESHABILITADOS ---- */
+.button:disabled {
+    -fx-background-color: #555555; /* Color gris para deshabilitados */
+    -fx-text-fill: #cccccc;
+    -fx-opacity: 0.7;
+    -fx-effect: none; /* Sin sombra cuando está deshabilitado */
+}
+
+/* ---- ESTILO DEL CONTENEDOR DE CONTROLES (HBox) ---- */
+.control-box {
+    -fx-spacing: 15px; /* Espacio entre los botones de control */
+    -fx-alignment: center; /* Centrar los botones de control */
+    -fx-padding: 10px;
+}
